@@ -22,7 +22,19 @@
             <label for="image">Upload an Image</label>
             <input type="file" id="image" accept="image/*" title="Upload image file" required>
             <button type="submit">Upload Image</button>
+
+        <!--New Code sapos m no wok delete it-->
+        <label for="platform">Select Platform:</label>
+    <select id="platform" name="platform">
+        <option value="facebook">Facebook</option>
+        <option value="instagram">Instagram</option>
+        <option value="tiktok">TikTok</option>
+        <option value="youtube">YouTube</option>
+    </select>
+    <textarea id="message" placeholder="Enter your post..."></textarea>
+    <button type="submit">Post</button>
         </form>
+        <!--New Code end-->
 
         <!-- Form for uploading a video -->
         <form id="video-upload-form" enctype="multipart/form-data">
