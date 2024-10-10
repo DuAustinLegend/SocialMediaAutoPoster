@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Social Media Auto Poster</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Social Media Auto Poster</h1>
+
+        <!-- Form for posting text -->
+        <form id="text-post-form">
+            <label for="post-text">Write your post</label>
+            <textarea id="post-text" placeholder="Write your post here..." title="Text post" required></textarea>
+            <button type="submit">Post Text</button>
+        </form>
+
+        <!-- Form for uploading an image -->
+        <form id="image-upload-form" enctype="multipart/form-data">
+            <label for="image">Upload an Image</label>
+            <input type="file" id="image" accept="image/*" title="Upload image file" required>
+            <button type="submit">Upload Image</button>
+        </form>
+
+        <!-- Form for uploading a video -->
+        <form id="video-upload-form" enctype="multipart/form-data">
+            <label for="video">Upload a Video</label>
+            <input type="file" id="video" accept="video/*" title="Upload video file" required>
+            <button type="submit">Upload Video</button>
+        </form>
+
+        <div id="response-message"></div>
+    </div>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
